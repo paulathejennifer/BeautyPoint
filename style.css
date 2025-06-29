@@ -1,0 +1,123 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0; padding: 0;
+  background: #fff7fa;
+  color: #432534;
+}
+header {
+  background: linear-gradient(to right,#d85585  0%, #cdb4db 100%);
+  color: #fff;
+  padding-bottom: 40px;
+}
+nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 10vw 0 10vw;
+}
+.logo {
+  font-size: 2em; font-weight: 700; letter-spacing: 2px;
+}
+nav ul {
+  display: flex; list-style: none; gap: 30px;
+  margin: 0; padding: 0;
+}
+nav a {
+  color: #fff; text-decoration: none; font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #ffe5ec;
+}
+.hero {
+  text-align: center; margin-top: 40px;
+}
+.hero h1 {
+  font-size: 2.7em; margin: 0 0 10px 0;
+}
+.hero p {
+  font-size: 1.3em; margin: 0 0 30px 0;
+}
+.btn {
+  display: inline-block;
+  background: #d85585;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #b5838d;
+}
+
+section {
+  padding: 60px 0;
+}
+.container {
+  width: 90vw; max-width: 1100px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2em; margin-bottom: 20px;
+  color: #d85585;
+}
+.about p {
+  font-size: 1.2em;
+}
+
+.services .service-list {
+  display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;
+}
+.services .service {
+  background: #fff; padding: 25px; border-radius: 20px;
+  box-shadow: 0 4px 22px rgba(255, 175, 204, 0.12);
+  width: 270px; text-align: center;
+  transition: transform 0.2s;
+}
+.services .service:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 6px 30px rgba(186,131,141,0.18);
+}
+.services .service img {
+  width: 80px; height: 80px;
+  object-fit: cover; border-radius: 50%; margin-bottom: 15px;
+}
+
+.gallery-list {
+  display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+}
+.gallery-list img {
+  width: 200px; height: 150px; object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(255, 175, 204, 0.12);
+  transition: transform 0.2s;
+}
+.gallery-list img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(186,131,141,0.18);
+}
+
+.contact {
+  background: #ffe5ec;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+.contact .btn {
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center; padding: 20px 0; background: #d85585; color: #fff;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+@media (max-width: 850px) {
+  .services .service-list, .gallery-list {
+    flex-direction: column; align-items: center;
+  }
+  nav {
+    flex-direction: column; gap: 15px;
+  }
+}
